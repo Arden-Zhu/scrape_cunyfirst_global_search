@@ -79,19 +79,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="680.666666666667,1512.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="880,2772.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Global'" sap:VirtualizedContainerService.HintSize="638.666666666667,1420.66666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="906664b21b14ff193f49c5a1a553fa08" Selector="&lt;html app='chrome.exe' title='Global Class Search - Results' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Global'" sap:VirtualizedContainerService.HintSize="838,2680.66666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="906664b21b14ff193f49c5a1a553fa08" Selector="&lt;html app='chrome.exe' title='Global Class Search - Results' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604.666666666667,1274.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Get Campus" sap:VirtualizedContainerService.HintSize="804,2534.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Name="i">
                 <Variable.Default>
@@ -99,7 +99,6 @@
                 </Variable.Default>
               </Variable>
               <Variable x:TypeArguments="ui:UiElement" Name="collegeTable" />
-              <Variable x:TypeArguments="ui:UiElement" Name="CoursesDiv" />
               <Variable x:TypeArguments="x:String" Name="collegeStr" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
@@ -107,15 +106,15 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="594,1488" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile DisplayName="Do While " sap:VirtualizedContainerService.HintSize="762,2442.66666666667" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="557.333333333333,1318.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="725.333333333333,2273.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="515.333333333333,130" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                  <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="683.333333333333,130" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -137,7 +136,7 @@
                       </scg:List>
                     </ui:MultipleAssign.AssignOperations>
                   </ui:MultipleAssign>
-                  <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="Find Element" FoundElement="[collegeTable]" sap:VirtualizedContainerService.HintSize="515.333333333333,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
+                  <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="Find Element" FoundElement="[collegeTable]" sap:VirtualizedContainerService.HintSize="683.333333333333,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3">
                     <ui:WaitUiElementAppear.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc3b6543-0ab8-4446-a3b7-ff7a4eafd765" InformativeScreenshot="1885b9d62abe6144ff6845726e621235" Selector="[&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;table' parentid='wrapper' tag='TABLE' idx='&quot; + i.ToString() + &quot;' /&gt;&quot;]" TimeoutMS="0">
                         <ui:Target.WaitForReady>
@@ -146,38 +145,15 @@
                       </ui:Target>
                     </ui:WaitUiElementAppear.Target>
                   </ui:WaitUiElementAppear>
-                  <If Condition="[not IsNothing(collegeTable)]" sap:VirtualizedContainerService.HintSize="515.333333333333,910.666666666667" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[not IsNothing(collegeTable)]" sap:VirtualizedContainerService.HintSize="683.333333333333,1865.33333333333" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="478.666666666667,719.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="646.666666666667,1674" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436.666666666667,238.666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_6">
-                          <ui:CommentOut.Body>
-                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,160" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                              <ui:Highlight HighlightTime="{x:Null}" Color="Gold" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_3">
-                                <ui:Highlight.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[collegeTable]" Id="727afa02-4085-45e0-855b-0c324b19848c">
-                                    <ui:Target.TimeoutMS>
-                                      <InArgument x:TypeArguments="x:Int32" />
-                                    </ui:Target.TimeoutMS>
-                                    <ui:Target.WaitForReady>
-                                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                                    </ui:Target.WaitForReady>
-                                  </ui:Target>
-                                </ui:Highlight.Target>
-                              </ui:Highlight>
-                            </Sequence>
-                          </ui:CommentOut.Body>
-                        </ui:CommentOut>
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="436.666666666667,68" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="604.666666666667,68" sap2010:WorkflowViewState.IdRef="GetValue_2">
                           <ui:GetValue.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="83e72949-6650-4b93-8c6a-1acdf5e47948" Selector="[collegeTable.Selector.ToString() + &quot; &lt;webctrl tag='SPAN' /&gt;&quot;]">
                               <ui:Target.TimeoutMS>
@@ -192,16 +168,107 @@
                             <OutArgument x:TypeArguments="x:String">[collegeStr]</OutArgument>
                           </ui:GetValue.Value>
                         </ui:GetValue>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="436.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[collegeStr]" />
-                        <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="Find Element" FoundElement="[CoursesDiv]" sap:VirtualizedContainerService.HintSize="436.666666666667,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4">
-                          <ui:WaitUiElementAppear.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc3b6543-0ab8-4446-a3b7-ff7a4eafd765" InformativeScreenshot="8c005fe04ce760fbf99ef213140d2be9" Selector="[&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div' parentid='wrapper' tag='DIV' idx='&quot; + (1+i).ToString() + &quot;' /&gt;&quot;]" TimeoutMS="0">
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
-                          </ui:WaitUiElementAppear.Target>
-                        </ui:WaitUiElementAppear>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="604.666666666667,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[collegeStr]" />
+                        <Sequence DisplayName="Get Courses" sap:VirtualizedContainerService.HintSize="604.666666666667,1339.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="ui:UiElement" Name="coursesDiv" />
+                            <Variable x:TypeArguments="x:Int32" Default="0" Name="j" />
+                            <Variable x:TypeArguments="ui:UiElement" Name="courseTable" />
+                            <Variable x:TypeArguments="x:String" Name="courseStr" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="Find Element" FoundElement="[CoursesDiv]" sap:VirtualizedContainerService.HintSize="562.666666666667,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4">
+                            <ui:WaitUiElementAppear.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc3b6543-0ab8-4446-a3b7-ff7a4eafd765" InformativeScreenshot="8c005fe04ce760fbf99ef213140d2be9" Selector="[&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div' parentid='wrapper' tag='DIV' idx='&quot; + (1+i).ToString() + &quot;' /&gt;&quot;]" TimeoutMS="0">
+                                <ui:Target.WaitForReady>
+                                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                                </ui:Target.WaitForReady>
+                              </ui:Target>
+                            </ui:WaitUiElementAppear.Target>
+                          </ui:WaitUiElementAppear>
+                          <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="562.666666666667,1101.33333333333" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                            <ui:InterruptibleDoWhile.Body>
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,932" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="484,130" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                                  <ui:MultipleAssign.AssignOperations>
+                                    <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="x:Int32">[j]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="x:Int32">[j + 1]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                      <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                        <ui:AssignOperation.To>
+                                          <OutArgument x:TypeArguments="ui:UiElement">[courseTable]</OutArgument>
+                                        </ui:AssignOperation.To>
+                                        <ui:AssignOperation.Value>
+                                          <InArgument x:TypeArguments="ui:UiElement">[Nothing]</InArgument>
+                                        </ui:AssignOperation.Value>
+                                      </ui:AssignOperation>
+                                    </scg:List>
+                                  </ui:MultipleAssign.AssignOperations>
+                                </ui:MultipleAssign>
+                                <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" ContinueOnError="True" DisplayName="Find Element" FoundElement="[courseTable]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_5">
+                                  <ui:WaitUiElementAppear.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="56f159ad-2061-4442-8f44-5a19bcdf5020" InformativeScreenshot="77842171f636bffdbc245ca737d705ca" Selector="[coursesDiv.Selector.ToString() + &quot; &lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' idx='&quot; + j.ToString() + &quot;' /&gt;&quot;]" TimeoutMS="0">
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:WaitUiElementAppear.Target>
+                                </ui:WaitUiElementAppear>
+                                <If Condition="[not IsNothing(courseTable)]" sap:VirtualizedContainerService.HintSize="484,524" sap2010:WorkflowViewState.IdRef="If_2">
+                                  <If.Then>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="376,332.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                                        <ui:GetValue.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d3f3784b-50f0-48d6-b32c-c69b113fedd0" InformativeScreenshot="9b91f1d311765df88b1c0add9b5b8c53" Selector="[courseTable.Selector.ToString() + &quot; &lt;webctrl tag='SPAN' /&gt;&quot;]" TimeoutMS="0">
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:GetValue.Target>
+                                        <ui:GetValue.Value>
+                                          <OutArgument x:TypeArguments="x:String">[courseStr]</OutArgument>
+                                        </ui:GetValue.Value>
+                                      </ui:GetValue>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[courseStr]" />
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </ui:InterruptibleDoWhile.Body>
+                            <ui:InterruptibleDoWhile.Condition>
+                              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not IsNothing(courseTable)" />
+                            </ui:InterruptibleDoWhile.Condition>
+                          </ui:InterruptibleDoWhile>
+                        </Sequence>
                       </Sequence>
                     </If.Then>
                     <If.Else>
