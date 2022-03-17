@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="940.666666666667,3939.33333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="940.666666666667,3968" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="41">
       <x:String>System.Activities</x:String>
@@ -81,19 +81,19 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="950.666666666667,3874.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="950.666666666667,3903.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Global'" sap:VirtualizedContainerService.HintSize="908.666666666667,3782.66666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="906664b21b14ff193f49c5a1a553fa08" Selector="&lt;html app='chrome.exe' title='Global Class Search - Results' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Global'" sap:VirtualizedContainerService.HintSize="908.666666666667,3811.33333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="906664b21b14ff193f49c5a1a553fa08" Selector="&lt;html app='chrome.exe' title='Global Class Search - Results' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Get Campus" sap:VirtualizedContainerService.HintSize="874.666666666667,3636.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Get Campus" sap:VirtualizedContainerService.HintSize="874.666666666667,3665.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Int32" Default="0" Name="i" />
               <Variable x:TypeArguments="ui:UiElement" Name="collegeTable" />
@@ -111,9 +111,9 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleDoWhile Condition="[not IsNothing(collegeTable)]" DisplayName="Do While " sap:VirtualizedContainerService.HintSize="832.666666666667,3544.66666666667" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+            <ui:InterruptibleDoWhile Condition="[not IsNothing(collegeTable)]" DisplayName="Do While " sap:VirtualizedContainerService.HintSize="832.666666666667,3573.33333333333" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
               <ui:InterruptibleDoWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="796,3375.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="796,3404" sap2010:WorkflowViewState.IdRef="Sequence_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,9 +150,9 @@
                       </ui:Target>
                     </ui:WaitUiElementAppear.Target>
                   </ui:WaitUiElementAppear>
-                  <If Condition="[not IsNothing(collegeTable)]" sap:VirtualizedContainerService.HintSize="754,2967.33333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[not IsNothing(collegeTable)]" sap:VirtualizedContainerService.HintSize="754,2996" sap2010:WorkflowViewState.IdRef="If_1">
                     <If.Then>
-                      <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="717.333333333333,2776" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="717.333333333333,2804.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,14 +187,14 @@
                             </OutArgument>
                           </ui:InvokeCode.Arguments>
                         </ui:InvokeCode>
-                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="675.333333333333,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[college + &quot;,&quot; + term]" />
-                        <ui:AppendLine DisplayName="Append Line" FileName="[filename]" sap:VirtualizedContainerService.HintSize="675.333333333333,135.333333333333" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[collegeStr]" UseDefaultEncoding="False" />
-                        <Sequence DisplayName="Get Courses" sap:VirtualizedContainerService.HintSize="675.333333333333,1927.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                        <Sequence DisplayName="Get Courses" sap:VirtualizedContainerService.HintSize="675.333333333333,2266" sap2010:WorkflowViewState.IdRef="Sequence_23">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="ui:UiElement" Name="coursesDiv" />
                             <Variable x:TypeArguments="x:Int32" Default="0" Name="j" />
                             <Variable x:TypeArguments="ui:UiElement" Name="courseTable" />
                             <Variable x:TypeArguments="x:String" Name="courseStr" />
+                            <Variable x:TypeArguments="x:String" Name="courseCode" />
+                            <Variable x:TypeArguments="x:String" Name="courseName1" />
                           </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -210,9 +210,9 @@
                               </ui:Target>
                             </ui:WaitUiElementAppear.Target>
                           </ui:WaitUiElementAppear>
-                          <ui:InterruptibleDoWhile Condition="[not IsNothing(courseTable)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="633.333333333333,1689.33333333333" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                          <ui:InterruptibleDoWhile Condition="[not IsNothing(courseTable)]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="633.333333333333,2028" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                             <ui:InterruptibleDoWhile.Body>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="596.666666666667,1520" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="596.666666666667,1858.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -249,9 +249,9 @@
                                     </ui:Target>
                                   </ui:WaitUiElementAppear.Target>
                                 </ui:WaitUiElementAppear>
-                                <If Condition="[not IsNothing(courseTable)]" sap:VirtualizedContainerService.HintSize="554.666666666667,1112" sap2010:WorkflowViewState.IdRef="If_2">
+                                <If Condition="[not IsNothing(courseTable)]" sap:VirtualizedContainerService.HintSize="554.666666666667,1450.66666666667" sap2010:WorkflowViewState.IdRef="If_2">
                                   <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="518,920.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="518,1259.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -271,6 +271,20 @@
                                       </ui:GetValue>
                                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="476,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[courseStr]" />
                                       <ui:AppendLine DisplayName="Append Line" FileName="[filename]" sap:VirtualizedContainerService.HintSize="476,135.333333333333" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[courseStr]" UseDefaultEncoding="False" />
+                                      <ui:InvokeCode ContinueOnError="{x:Null}" Code="code = name = &quot;&quot;;&#xD;&#xA;string[] words = courseStr.Split(new [] {'-'});&#xD;&#xA;code = words[0];&#xD;&#xA;for (int i=1; i &lt; words.Length; i++) {&#xD;&#xA;&#x9;name += words[i];&#xD;&#xA;}&#xD;&#xA;" DisplayName="Invoke code" sap:VirtualizedContainerService.HintSize="476,164" sap2010:WorkflowViewState.IdRef="InvokeCode_2" Language="CSharp">
+                                        <ui:InvokeCode.Arguments>
+                                          <InArgument x:TypeArguments="x:String" x:Key="courseStr">
+                                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="courseStr" />
+                                          </InArgument>
+                                          <OutArgument x:TypeArguments="x:String" x:Key="code">
+                                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="courseCode" />
+                                          </OutArgument>
+                                          <OutArgument x:TypeArguments="x:String" x:Key="name">
+                                            <mva:VisualBasicReference x:TypeArguments="x:String" ExpressionText="courseName1" />
+                                          </OutArgument>
+                                        </ui:InvokeCode.Arguments>
+                                      </ui:InvokeCode>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="476,94.6666666666667" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[courseCode + &quot;---- &quot; + courseName1]" />
                                       <Sequence DisplayName="Get Sections" sap:VirtualizedContainerService.HintSize="476,372.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_29">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
